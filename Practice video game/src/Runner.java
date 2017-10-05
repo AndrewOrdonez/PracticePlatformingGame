@@ -47,6 +47,7 @@ public class Runner {
 	static Room prevRoom=currentRoom;
 	static double grav=1;
 	static boolean l=true;
+	static int dt=0;
 	static boolean left, right, down=false;
 	public static void main(String[] args) throws InterruptedException
 	{
@@ -66,7 +67,10 @@ public class Runner {
 	    RoomProtocols.roomList.get(1).setSpawn(1, 980, 450);
 	    RoomProtocols.roomList.add(new Room(2,2));
 	    RoomProtocols.roomList.get(2).setSpawn(0, 10, 450);
+	    RoomProtocols.roomList.get(2).setSpawn(1, 980, 150);
 	    RoomProtocols.roomList.add(new Room(3,2));
+	    RoomProtocols.roomList.get(3).setSpawn(0, 10, 150);
+	    RoomProtocols.roomList.get(3).setSpawn(1, 980, 150);
 	    
 	    //code for work:
 	    while (true){
